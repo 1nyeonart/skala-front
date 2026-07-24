@@ -9,7 +9,7 @@
     <h1>👩🏻‍🦰 회원가입</h1>
     <p>SKALA-FRONT 회원가입을 환영합니다.</p>
     <hr>
-    <form>
+    <form action="signUpResult.html" method="get">
         
         <fieldset>
             <legend>계정 정보</legend>
@@ -41,11 +41,11 @@
             <legend>개인 프로필 정보</legend>
             <p>
             <label for="userName">이름:</label>
-            <input type="text" id="userName" nave="userName" required>
+            <input type="text" id="userName" name="userName" required>
             </p>
             <p>
-            <label for="userBirth">이름:</label>
-            <input type="date" id="userBirth" nave="userBirth">
+            <label for="userBirth">생년월일:</label>
+            <input type="date" id="userBirth" name="userBirth">
             </p>
             <p>
             성별:
@@ -57,20 +57,18 @@
             관심 분야 (중복 선택 가능): <br>
             <label><input type="checkbox" name="interest" value="frontend" checked> 웹 프론트엔드 (Vue.js/HTML)</label><br>
             <label><input type="checkbox" name="interest" value="uiux"> UI/UX 디자인 표준</label><br>
-            <label><input type="checkbox" name="interest" value="backend"> 벡엔드 & 데이터베이스</label><br>
+            <label><input type="checkbox" name="interest" value="backend"> 백엔드 & 데이터베이스</label><br>
             <label><input type="checkbox" name="interest" value="devops"> 클라우드 & 인프라</label>
             </p>
             <p>
             <label for="signupPath">가입경로 : </label>
-            <input type="text" id="signupPath name="signupPath">
             <select name="signupPath">
-                <option value="--선택해주세요">--선택해주세요</option>
+                <option value="">--선택해주세요--</option>
                 <option value="인터넷">인터넷</option>
                 <option value="광고/신문">광고/신문</option>
                 <option value="sns">sns</option>
                 <option value="지인추천">지인추천</option>
             </select>
-            </p>
             </p>
         </fieldset>
         <br>
